@@ -8,22 +8,22 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <>
-      <section className="bg-amber-100 min-h-screen">
+      <section id="main" className="bg-amber-100 min-h-screen">
         <Main />
       </section>
-      <section className="bg-amber-200 min-h-screen">
+      <section id="about" className="bg-amber-200 min-h-screen">
         <AboutMe />
       </section>
-      <section className="bg-amber-300 min-h-screen">
+      <section id="skills" className="bg-amber-300 min-h-screen">
         <Skills />
       </section>
-      <section className="bg-amber-400 min-h-screen">
+      <section id="projects" className="bg-amber-400 min-h-screen">
         <Projects />
       </section>
-      <section className="bg-amber-500 min-h-screen">
+      <section id="career" className="bg-amber-500 min-h-screen">
         <Career />
       </section>
-      <section className="bg-amber-600 min-h-screen">
+      <section id="contact" className="bg-amber-600 min-h-screen">
         <Contact />
       </section>
     </>
