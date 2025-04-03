@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center fixed top-0 w-full py-8 px-[100px]">
+    <header className="flex justify-between items-center fixed top-0 w-full py-6 px-[80px]">
       <div className="header-logo">
         <h1 className="font-bold text-3xl font-logo">
           <a href="#">Jungheerok</a>
         </h1>
       </div>
       <nav>
-        <ul className="header-menu flex gap-6 text-2xl font-bold px-8 py-4 bg-amber-50 rounded-full shadow-md">
+        <ul className="header-menu flex gap-6 text-2xl font-bold px-8 py-4 bg-amber-50 rounded-full shadow-md ">
           <li>
             <a href="#about">About Me</a>
           </li>
