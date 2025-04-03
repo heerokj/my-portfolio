@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center fixed top-0 w-full py-8 px-16">
+    <header className="flex justify-between items-center fixed top-0 w-full py-8 px-[100px]">
       <div className="header-logo">
         <h1 className="font-bold text-3xl font-logo">
           <a href="#">Jungheerok</a>
