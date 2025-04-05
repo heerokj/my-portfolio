@@ -23,42 +23,47 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
-      <form>
-        <label htmlFor="email">email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="이메일를 입력해주세요"
-          value={form.email}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="title">제목</label>
-        <input
-          type="text"
-          id="title"
-          name="title"
-          placeholder="제목을 입력해주세요"
-          value={form.title}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="message">내용</label>
-        <textarea
-          type="text"
-          id="message"
-          name="message"
-          placeholder="내용을 입력해주세요"
-          value={form.message}
-          onChange={handleChange}
-          required
-        />
-        <button type="button" onClick={onSubmit}>
-          전달
-        </button>
-      </form>
-    </div>
+    <form className="border-2 p-4 flex flex-col gap-2 w-1/3 rounded-xl border-gray-500 mt-6">
+      <label htmlFor="email">email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="이메일를 입력해주세요"
+        value={form.email}
+        onChange={handleChange}
+        required
+        className="border p-2 rounded-xl border-gray-500"
+      />
+      <label htmlFor="title">제목</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        placeholder="제목을 입력해주세요"
+        value={form.title}
+        onChange={handleChange}
+        required
+        className="border p-2 rounded-xl border-gray-500"
+      />
+      <label htmlFor="message">내용</label>
+      <textarea
+        type="text"
+        id="message"
+        name="message"
+        placeholder="내용을 입력해주세요"
+        value={form.message}
+        onChange={handleChange}
+        required
+        className="border p-2 rounded-xl border-gray-500 resize-none h-36"
+      />
+      <button
+        type="button"
+        onClick={onSubmit}
+        className="rounded-full py-3 px-5 mt-4 shadow-md bg-rose-300"
+      >
+        전달
+      </button>
+    </form>
   );
 }
