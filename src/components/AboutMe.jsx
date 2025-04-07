@@ -1,11 +1,33 @@
+"use client";
 import React from "react";
 import ProfilePhoto from "./ProfilePhoto";
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
   return (
     <div className="flex flex-col items-center w-4/7">
-      <h2 className="font-content text-[30px] font-bold">AboutMe</h2>
-      <div className="grid grid-cols-3 gap-12 mt-6 w-full h-full overflow-hidden">
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 0.7,
+        }}
+        className="font-content text-[30px] font-bold"
+      >
+        AboutMe
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1,
+        }}
+        className="grid grid-cols-3 gap-12 mt-6 w-full h-full overflow-hidden"
+      >
         <section className="col-span-1">
           <ProfilePhoto poTo="jungheerok" />
         </section>
@@ -46,7 +68,7 @@ export default function AboutMe() {
             </li>
           </ul>
         </section>
-      </div>
+      </motion.div>
     </div>
   );
 }

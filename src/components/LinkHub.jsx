@@ -1,9 +1,20 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function LinkHub() {
   return (
-    <div className="flex gap-6 ml-1 items-center ">
+    <motion.div
+      initial={{ opacity: 0, y: -30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
+      transition={{
+        ease: "easeInOut",
+        duration: 0.7,
+      }}
+      className="flex gap-6 ml-1 items-center "
+    >
       <a
         href="https://wjdgmlfhr0321.tistory.com/"
         className="hover:-translate-y-1"
@@ -28,6 +39,6 @@ export default function LinkHub() {
           alt="다운로드"
         />
       </a>
-    </div>
+    </motion.div>
   );
 }

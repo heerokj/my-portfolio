@@ -1,11 +1,43 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Career() {
   return (
     <div className="flex flex-col items-center gap-2">
-      <h2 className="font-content text-[30px] font-bold">Career & Education</h2>
-      <p>개발 관련 경력 및 교육 사항입니다.</p>
-      <ul className="flex flex-col mt-4">
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 0.7,
+        }}
+        className="font-content text-[30px] font-bold"
+      >
+        Career & Education
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 0.9,
+        }}
+      >
+        개발 관련 경력 및 교육 사항입니다.
+      </motion.p>
+      <motion.ul
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1.1,
+        }}
+        className="flex flex-col mt-4"
+      >
         <li className="border-l-3 border-rose-500 pb-8 after:content-[''] relative after:absolute after:w-6 after:h-6 after:bg-rose-500 after:rounded-full after:left-[-0.9rem] after:top-0">
           <div className="px-6">
             <p>2024.07 ~ 2024.12</p>
@@ -29,7 +61,7 @@ export default function Career() {
             </ul>
           </div>
         </li>
-      </ul>
+      </motion.ul>
     </div>
   );
 }

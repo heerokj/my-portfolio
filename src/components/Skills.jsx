@@ -1,12 +1,44 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
     <div className="flex flex-col items-center gap-2 w-3/7 h-[530px]">
-      <h2 className="font-content text-[30px] font-bold">Skills</h2>
-      <p>이하 기술을 사용해보았습니다.</p>
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 0.7,
+        }}
+        className="font-content text-[30px] font-bold"
+      >
+        Skills
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 0.9,
+        }}
+      >
+        이하 기술을 사용해보았습니다.
+      </motion.p>
 
-      <div className="grid grid-cols-10 gap-6 mt-4 w-full h-full overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1.1,
+        }}
+        className="grid grid-cols-10 gap-6 mt-4 w-full h-full overflow-hidden"
+      >
         {/* 왼쪽: Front-end */}
         <div className="skills_front col-span-6 bg-gray-100 p-6 rounded shadow-lg hover:-translate-y-1">
           <p className="font-bold mb-4 text-2xl">Front-end</p>
@@ -147,7 +179,7 @@ export default function Skills() {
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
