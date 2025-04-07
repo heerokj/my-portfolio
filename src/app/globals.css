@@ -36,7 +36,7 @@ body {
   --font-logo: "HakgyoansimDunggeunmisoTTF-B", sans-serif;
   --font-content: "Pretendard-Regular", sans-serif;
 
-  --animate-wave-one: wave 100000ms ease-in-out infinite;
-  --animate-wave-two: wave 135000ms ease-in-out infinite;
-  --animate-wave-three: wave 110000ms ease-in-out infinite;
+  --animate-wave-one: wave 90000ms ease-in-out infinite;
+  --animate-wave-two: wave 100000ms ease-in-out infinite;
+  --animate-wave-three: wave 70000ms ease-in-out infinite;
 }
