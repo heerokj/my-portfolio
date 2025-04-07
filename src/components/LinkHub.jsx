@@ -3,12 +3,22 @@ import React from "react";
 
 export default function LinkHub() {
   return (
-    <div className="flex gap-6 ml-1">
-      <Image src="/icons/tistory.svg" width={25} height={25} alt="블로그" />
-      <Image src="/icons/github.svg" width={30} height={30} alt="깃허브" />
+    <div className="flex gap-6 ml-1 items-center ">
+      <a
+        href="https://wjdgmlfhr0321.tistory.com/"
+        className="hover:-translate-y-1"
+      >
+        <Image src="/icons/tistory.svg" width={25} height={25} alt="블로그" />
+      </a>
+      <a
+        href="https://github.com/heerokj/my-portfolio.git"
+        className="hover:-translate-y-1"
+      >
+        <Image src="/icons/github.svg" width={30} height={30} alt="깃허브" />
+      </a>
       <a
         href="/resume.pdf"
-        className="flex gap-2 rounded-full py-3 px-5 bg-[#f16078]"
+        className="flex gap-2 rounded-full py-3 px-5 bg-rose-300 hover:-translate-y-1"
       >
         Resume
         <Image

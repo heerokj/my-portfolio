@@ -6,9 +6,9 @@ export default function Skills() {
       <h2 className="font-content text-[30px] font-bold">Skills</h2>
       <p>이하 기술을 사용해보았습니다.</p>
 
-      <div className="grid grid-cols-10 gap-4 mt-4 w-full h-full overflow-hidden">
+      <div className="grid grid-cols-10 gap-6 mt-4 w-full h-full overflow-hidden">
         {/* 왼쪽: Front-end */}
-        <div className="skills_front col-span-6 bg-gray-100 p-6 rounded shadow-lg">
+        <div className="skills_front col-span-6 bg-gray-100 p-6 rounded shadow-lg hover:-translate-y-1">
           <p className="font-bold mb-4 text-2xl">Front-end</p>
           <ul className="flex flex-col gap-3">
             <li className="flex items-center">
@@ -97,8 +97,8 @@ export default function Skills() {
         </div>
 
         {/* 오른쪽: Back-end + Tools */}
-        <div className="col-span-4 flex flex-col gap-4">
-          <div className="skills_Back bg-gray-100 p-6 rounded h-1/2 shadow-lg">
+        <div className="col-span-4 flex flex-col gap-4 ">
+          <div className="skills_Back bg-gray-100 p-6 rounded h-1/2 shadow-lg hover:-translate-y-1">
             <p className="font-bold mb-4 text-2xl">Back-end & Database</p>
             <ul>
               <li className="flex">
@@ -114,7 +114,7 @@ export default function Skills() {
               </li>
             </ul>
           </div>
-          <div className="skills_etc bg-gray-100 p-6 rounded h-1/2 shadow-lg">
+          <div className="skills_etc bg-gray-100 p-6 rounded h-1/2 shadow-lg hover:-translate-y-1">
             <p className="font-bold mb-4 text-2xl">Tools & Etc</p>
             <ul className="flex flex-col gap-2">
               <li className="flex items-center">

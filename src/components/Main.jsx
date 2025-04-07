@@ -1,16 +1,16 @@
 import React from "react";
 import LinkHub from "./LinkHub";
 import ProfilePhoto from "./ProfilePhoto";
-import Introduce from "./Introduce";
+import Introduction from "./Introduction";
 
 export default function Main() {
   return (
-    <div className="flex justify-center gap-16 pt-[200px]">
-      <div className="pt-10">
-        <Introduce />
+    <div className="flex justify-center items-center gap-16 ">
+      <div>
+        <Introduction />
         <LinkHub />
       </div>
-      <ProfilePhoto />
+      <ProfilePhoto poTo="heerok-character" />
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function Header() {
         </h1>
       </div>
       <nav>
-        <ul className="header-menu flex gap-6 text-2xl font-bold px-8 py-4 bg-gray-100 rounded-full shadow-md ">
+        <ul className="header-menu flex gap-6 text-2xl font-bold px-8 py-4 bg-[#fffdfc] rounded-full shadow-md ">
           <li>
             <a href="#main">home</a>
           </li>

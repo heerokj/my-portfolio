@@ -24,31 +24,31 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className="bg-amber-200 min-h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center"
       >
         <AboutMe />
       </section>
       <section
         id="skills"
-        className="bg-amber-300 min-h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center"
       >
         <Skills />
       </section>
       <section
         id="projects"
-        className="bg-amber-100 min-h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center"
       >
         <Projects />
       </section>
       <section
         id="career"
-        className="bg-amber-200 min-h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center"
       >
         <Career />
       </section>
       <section
         id="contact"
-        className="bg-amber-300 min-h-screen flex flex-col justify-center"
+        className="min-h-screen flex flex-col justify-center"
       >
         <Contact />
       </section>
