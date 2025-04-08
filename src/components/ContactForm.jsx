@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="border border-gray-200 bg-[#fffdfc] p-4 flex flex-col gap-2 w-1/3 rounded-xl mt-6">
+    <form className="border border-rose-200 bg-[#fffdfc] p-4 flex flex-col gap-2 w-1/3 rounded-xl mt-6">
       <label htmlFor="email">email</label>
       <input
         type="email"
@@ -33,7 +33,7 @@ export default function ContactForm() {
         value={form.email}
         onChange={handleChange}
         required
-        className="border border-gray-200 p-2 rounded-lg"
+        className="border border-rose-200 p-2 rounded-lg"
       />
       <label htmlFor="title">제목</label>
       <input
@@ -44,7 +44,7 @@ export default function ContactForm() {
         value={form.title}
         onChange={handleChange}
         required
-        className="border border-gray-200 p-2 rounded-lg"
+        className="border border-rose-200 p-2 rounded-lg"
       />
       <label htmlFor="message">내용</label>
       <textarea
@@ -55,12 +55,12 @@ export default function ContactForm() {
         value={form.message}
         onChange={handleChange}
         required
-        className="border border-gray-200 p-2 rounded-lg resize-none h-48"
+        className="border border-rose-200 p-2 rounded-lg resize-none h-48"
       />
       <button
         type="button"
         onClick={onSubmit}
-        className="rounded-full py-3 px-5 mt-4 shadow-md bg-rose-300"
+        className="rounded-full py-3 px-5 my-4 shadow-md bg-rose-300 hover:bg-rose-500"
       >
         전달하기
       </button>
