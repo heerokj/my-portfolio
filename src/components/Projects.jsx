@@ -39,18 +39,18 @@ export default function Projects() {
         }}
         className="projects grid grid-cols-3 gap-2 mt-6"
       >
-        <li className="project w-[250px] rounded-lg overflow-hidden">
+        <li className="project border-2 border-rose-600 shadow-lg w-[350px] rounded-lg overflow-hidden">
           <a
             href="https://github.com/heerokj/my-portfolio.git"
             target="_blank"
             className="relative"
           >
             <Image
-              src="/images/heerok-character.png"
-              width={100}
-              height={100}
+              src="/images/projects/portfoilo.png"
+              width={350}
+              height={150}
               alt="프로필 사진"
-              className=" w-[100%]"
+              className="w-[100%] h-[100%]"
             />
             <div className="project_metadata absolute top-0 left-0 w-[100%] h-[100%] bg-black opacity-0 hover:opacity-80   text-white flex flex-col items-center justify-center transition-all duration-200 ease-in translate-y-[-10px] hover:translate-y-0">
               <p className="project_title text-2xl">나의 포트폴리오</p>
@@ -59,18 +59,18 @@ export default function Projects() {
             </div>
           </a>
         </li>
-        <li className="project w-[250px] rounded-lg overflow-hidden">
+        <li className="project border-2 border-rose-600 shadow-lg w-[350px] rounded-lg overflow-hidden">
           <a
             href="https://github.com/heerokj/bookkki.git"
             target="_blank"
             className="relative"
           >
             <Image
-              src="/images/heerok-character.png"
-              width={100}
-              height={100}
+              src="/images/projects/bookkki.png"
+              width={350}
+              height={150}
               alt="Bookkki"
-              className=" w-[100%]"
+              className="w-[100%] h-[100%]"
             />
             <div className="project_metadata absolute top-0 left-0 w-[100%] h-[100%] bg-black opacity-0 hover:opacity-80   text-white flex flex-col items-center justify-center transition-all duration-200 ease-in translate-y-[-10px] hover:translate-y-0">
               <p className="project_title text-2xl">Bookkki</p>
@@ -79,18 +79,19 @@ export default function Projects() {
             </div>
           </a>
         </li>
-        <li className="project w-[250px] rounded-lg overflow-hidden">
+
+        <li className="project border-2 border-rose-600 shadow-lg w-[350px] rounded-lg overflow-hidden">
           <a
             href="https://github.com/heerokj/spartaProject10-dalgona.git"
             target="_blank"
             className="relative"
           >
             <Image
-              src="/images/heerok-character.png"
-              width={100}
-              height={100}
-              alt="dalgona"
-              className=" w-[100%]"
+              src="/images/projects/dalgona.png"
+              width={300}
+              height={200}
+              alt="Bookkki"
+              className="w-[100%] h-[100%] "
             />
             <div className="project_metadata absolute top-0 left-0 w-[100%] h-[100%] bg-black opacity-0 hover:opacity-80   text-white flex flex-col items-center justify-center transition-all duration-200 ease-in translate-y-[-10px] hover:translate-y-0">
               <p className="project_title text-2xl">달고나</p>
